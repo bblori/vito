@@ -18,6 +18,31 @@ production servers without a hassle.
 bash <(curl -Ls https://raw.githubusercontent.com/vitodeploy/vito/2.x/scripts/install.sh)
 ```
 
+## Then
+
+1. Add .env
+
+2. Add Deployment Script
+
+php artisan down
+
+git pull
+
+composer install --no-dev
+
+php artisan migrate --force
+
+php artisan optimize:clear
+
+npm install
+
+npm run build
+
+php artisan up
+
+
+3. Github
+
 ## Features
 
 - Provisions and Manages the server
